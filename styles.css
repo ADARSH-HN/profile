@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #faf0e6; /* very light orange theme */
+    color: #333;
+}
+
+header {
+    background-color: #ffebcc; /* light orange theme */
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent line breaks */
+}
+
+nav ul li {
+    display: inline-block; /* Ensure links stay in a single line */
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+section {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #ff6600; /* darker shade of orange */
+}
+
+#video-gallery, #design-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; /* Aligns items in the center */
+}
+
+#video-gallery div, #design-gallery div {
+    width: 100%;
+    max-width: 300px; /* Ensures elements don't become too large */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    background-color: #ffe6cc; /* Light peach color */
+    transition: border-color 0.3s ease, transform 0.3s ease; /* Smooth transition for border color and transform */
+    border: 2px solid transparent; /* Prevent layout shift on hover */
+    position: relative;
+}
+
+#video-gallery div:hover, #design-gallery div:hover {
+    border: 2px solid #ff6600; /* Add a border on hover */
+}
+
+#video-gallery video {
+    width: 100%; /* Ensures videos fit within their containers */
+    height: auto;
+}
+
+#design-gallery img {
+    width: 100%; /* Ensures images fit within their containers */
+    height: auto;
+}
+
+/* Minimalist loading bar */
+.loading-bar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 4px;
+    width: 80%;
+    background: rgba(255, 102, 0, 0.3); /* Light orange bar background */
+    overflow: hidden;
+}
+
+.loading-bar::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #ff6600; /* Orange bar */
+    animation: loading 2s infinite;
+}
+
+@keyframes loading {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+/* Different fade-up animations */
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px); /* Initial position for fade-up effect */
+    transition: opacity 0.6s ease-out, transform 1s ease-out; /* Fade-up animation */
+}
+
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0); /* Final position */
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    h1, h2 {
+        font-size: 1.5em;
+    }
+}
