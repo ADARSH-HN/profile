@@ -4,17 +4,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Sample videos data
     const videos = [
-        {title: "Video 1", url: "product/video1.mp4"},
-        {title: "Video 2", url: "product/video2.mp4"},
-        {title: "Video 3", url: "product/video3.mp4"}
+        {title: "Its a video i made when i joined RC plane workshop 2024", url: "product/video1.mp4"},
+        {title: "1 sem got completed and its memories", url: "product/video2.mp4"},
+        {title: "A tragic event happend in Nitte 2024", url: "product/video3.mp4"}
     ];
 
     // Sample designs data
     const designs = [
-        {title: "Thumbnail 1", url: "product/pic1.png"},
-        {title: "Thumbnail 2", url: "product/pic2.png"},
-        {title: "Thumbnail 2", url: "product/pic3.png"},
-        {title: "Thumbnail 3", url: "product/pic4.png"}
+        {title: "Made this for out team in RC plane workshop", url: "product/pic1.png"},
+        {title: "poster for international womens day", url: "product/pic2.png"},
+        {title: "poster for international womens day", url: "product/pic3.png"},
+        {title: "This is made on the day vaalmiki jayanthi and that instagram account is mine made to post my designs and edits", url: "product/pic4.png"}
     ];
 
     // Load videos into gallery with fade-up class
