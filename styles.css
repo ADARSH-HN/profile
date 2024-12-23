@@ -34,14 +34,25 @@ section {
 }
 
 h1, h2 {
-    color: #ff6600; /* darker shade of orange */
+    color: #ff6600; 
+}
+.fade-up h1{
+    color: #ff6600; 
+    display: flex; 
+    justify-content: center; 
+    align-items:center;
+}
+.pic{
+    max-height: 2cm;
+    border-radius: 50%;
+    justify-content: right;
 }
 
 #video-gallery, #design-gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    justify-content: center; /* Aligns items in the center */
+    justify-content: left; /* Aligns items in the center */
 }
 
 #video-gallery div, #design-gallery div {
@@ -118,5 +129,11 @@ h1, h2 {
 
     h1, h2 {
         font-size: 1.5em;
+        display: flex; 
+        justify-content: center; 
+        align-items:center;
+    }
+    #video-gallery, #design-gallery {
+        justify-content: center; /* Aligns items in the center */
     }
 }
